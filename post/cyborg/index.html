@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>未来生化人义体系统设计练习 | Liao Yu</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://liaoyu.co/favicon.ico?v=1587567680793">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://liaoyu.co/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://liaoyu.co">
+        <img class="avatar" src="https://liaoyu.co/images/avatar.png?v=1587567680793" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://liaoyu.co">
+        <h1 class="site-title">Liao Yu</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://liaoyu.co/post-images/cyborg.png')">
+            </div>
+          
+          <h2 class="post-title">未来生化人义体系统设计练习</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-04-03</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://liaoyu.co/tag/AQRfoGNa-/">
+                    交互设计
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://liaoyu.co/tag/ktiTCh-Wah/">
+                    设计练习
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <figure data-type="image" tabindex="1"><img src="https://liaoyu.co/post-images/1587557180856.png" alt="" loading="lazy"></figure>
+<p><img src="https://liaoyu.co/post-images/1587559100332.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560283422.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560288945.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560293055.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560296443.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560300338.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560304486.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560308220.png" alt="" loading="lazy"></p>
+<p><img src="https://liaoyu.co/post-images/1587560315526.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560318985.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560395814.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560400940.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560405775.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560411585.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560416063.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560421669.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560426321.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560432469.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560437837.png" alt="" loading="lazy"></p>
+<p><img src="https://liaoyu.co/post-images/1587560446356.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560453910.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560459969.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560465218.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560470553.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560476273.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560481844.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587560487375.png" alt="" loading="lazy"></p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://liaoyu.co/post/human-fall-flat/">
+              <h3 class="post-title">
+                下一篇：Human: Fall Flat 游戏分析
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://liaoyu.co/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
