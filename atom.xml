@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liaoyu.co</id>
     <title>Liao Yu</title>
-    <updated>2020-04-22T15:56:30.705Z</updated>
+    <updated>2020-04-22T16:50:26.473Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liaoyu.co"/>
     <link rel="self" href="https://liaoyu.co/atom.xml"/>
@@ -356,6 +356,31 @@
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Genesis VR游戏设计与开发]]></title>
+        <id>https://liaoyu.co/post/genesis/</id>
+        <link href="https://liaoyu.co/post/genesis/">
+        </link>
+        <updated>2019-07-24T18:34:25.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>Genesis 是在新加坡国立大学暑期项目中设计并开发的一款基于Oculus和Unity 3D的VR休闲益智游戏，让玩家通过VR手柄的交互创造和经营属于自己的星球。</p>
+</blockquote>
+<p><a href="https://www.bilibili.com/video/BV1ct411j7Yr?from=search&amp;seid=8576532992958029898">Demo视频</a></p>
+<p>游戏主要分为两个部分：</p>
+<ol>
+<li>
+<p>用基本元素合成新的物体。<br>
+<img src="https://liaoyu.co/post-images/1587573884978.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587573872183.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>将物体安置在你的星球上，但需要注意你的每次投放都会影响星球的环境参数，当星球环境遭到严重破坏时星球上的生物将不能存活。<br>
+<img src="https://liaoyu.co/post-images/1587573904152.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587573907930.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[空间站场景建模作业]]></title>
         <id>https://liaoyu.co/post/space-station/</id>
         <link href="https://liaoyu.co/post/space-station/">
@@ -379,6 +404,36 @@
 <img src="https://liaoyu.co/post-images/1587570446962.png" alt="" loading="lazy"><br>
 <img src="https://liaoyu.co/post-images/1587570478595.png" alt="" loading="lazy"><br>
 <img src="https://liaoyu.co/post-images/1587570482892.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[QSC部分设计作品归档]]></title>
+        <id>https://liaoyu.co/post/QSC-design/</id>
+        <link href="https://liaoyu.co/post/QSC-design/">
+        </link>
+        <updated>2018-09-01T16:00:18.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>记录<s>早年</s>的一些稚嫩视觉/UI设计</p>
+</blockquote>
+<h2 id="闲鱼ui重设计">闲鱼UI重设计</h2>
+<p><img src="https://liaoyu.co/post-images/1587571740845.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571747413.jpg" alt="" loading="lazy"></p>
+<h2 id="潮人毕业典礼">潮人毕业典礼</h2>
+<p><img src="https://liaoyu.co/post-images/1587571584793.gif" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571597145.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571859293.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571863452.jpg" alt="" loading="lazy"></p>
+<h2 id="求是潮年鉴">求是潮年鉴</h2>
+<figure data-type="image" tabindex="1"><img src="https://liaoyu.co/post-images/1587572920465.png" alt="" loading="lazy"></figure>
+<h2 id="潮汐音乐节">潮汐音乐节</h2>
+<figure data-type="image" tabindex="2"><img src="https://liaoyu.co/post-images/1587572292989.gif" alt="" loading="lazy"></figure>
+<h2 id="春纳三折页">春纳三折页</h2>
+<p><img src="https://liaoyu.co/post-images/1587572926409.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587572930052.png" alt="" loading="lazy"></p>
+<h2 id="狗年日历">狗年日历</h2>
+<figure data-type="image" tabindex="3"><img src="https://liaoyu.co/post-images/1587572935412.png" alt="" loading="lazy"></figure>
+<h2 id="全员大会海报">全员大会海报</h2>
+<figure data-type="image" tabindex="4"><img src="https://liaoyu.co/post-images/1587572939937.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
