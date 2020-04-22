@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liaoyu.co</id>
     <title>Liao Yu</title>
-    <updated>2020-04-22T15:36:14.077Z</updated>
+    <updated>2020-04-22T15:56:30.705Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liaoyu.co"/>
     <link rel="self" href="https://liaoyu.co/atom.xml"/>
@@ -353,6 +353,32 @@
 <p>根据以上的实验结果，我们发现：在数据层面，数据体量和数据维度是最主要的因素。</p>
 <p>针对这一点，我们将进一步展开更为严谨的定量实验，来研究可视化中的“数据量”以及“数据维度”对用户理解程度产生的影响。并且尝试去探究如何优化可视化设计，以减少这些因素对于理解的障碍。</p>
 <figure data-type="image" tabindex="14"><img src="https://liaoyu.co/post-images/1587545814929.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[空间站场景建模作业]]></title>
+        <id>https://liaoyu.co/post/space-station/</id>
+        <link href="https://liaoyu.co/post/space-station/">
+        </link>
+        <updated>2019-07-02T15:41:38.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>场景设计与表现课程作业<br>
+建模工具：Maya，Marmoset，Substance Painter</p>
+</blockquote>
+<h2 id="局部部件">局部部件</h2>
+<p><img src="https://liaoyu.co/post-images/1587570562049.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570796125.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570749609.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570583637.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570589143.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570669711.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570679766.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570708234.png" alt="" loading="lazy"></p>
+<h2 id="整体效果">整体效果</h2>
+<p><img src="https://liaoyu.co/post-images/1587570474403.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570446962.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570478595.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570482892.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
