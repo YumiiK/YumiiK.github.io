@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>PillPall：为抑郁症患者设计的药盒 | Liao Yu</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://liaoyu.co/favicon.ico?v=1597605668928">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://liaoyu.co/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://liaoyu.co">
+        <img class="avatar" src="https://liaoyu.co/images/avatar.png?v=1597605668928" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://liaoyu.co">
+        <h1 class="site-title">Liao Yu</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://liaoyu.co/post-images/pillpall.jpg')">
+            </div>
+          
+          <h2 class="post-title">PillPall：为抑郁症患者设计的药盒</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-06-21</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://liaoyu.co/tag/HpiEepsKC/">
+                    产品设计
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://liaoyu.co/tag/aj6uLLvZRe/">
+                    原型开发
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://liaoyu.co/tag/0Lm_Zhw9TN/">
+                    UI
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <blockquote>
+<p>受心理治疗中行为激活疗法和游戏化技术的启发，我们设计了一款具有便携性的智能药盒，药盒将同时关注使用者的生理需求和心理需求。<br>
+药盒鼓励用户完成一些有助于身心健康的小任务，并通过游戏化的方式促进这种正向的循环。<br>
+具体的方式为在显示器中央将显示每日用户需要完成的小任务，用户完成这些任务后可以获得一些正向的奖励。<br>
+我的角色：组长，产品设计，UI设计，原型开发</p>
+</blockquote>
+<p><img src="https://liaoyu.co/post-images/1597603885029.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597603937605.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597603942697.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597603947182.jpg" alt="" loading="lazy"></p>
+<h1 id="一-背景">一、背景</h1>
+<p>当今市面上大部分智能药盒针对的是老年人，老年人吃药主要问题是健忘，会提供提醒吃药、他人监督等功能。但是，现实生活中还有一类患者群体，需要通过定时服药来缓解自身的症状，他们就是神经症患者；其中，又以抑郁症最为典型。我们想设计一个针对抑郁症患者的智能药盒，而对于这类人群，对智能药盒的需求略有不同。<br>
+据统计，我国抑郁症患者已超过8900万，高发群体多以高职、高薪、高学历的成功人士以及青少年为主。根据流行病学的研究情况，大约50%的人症状不到3个月会自行缓解，80%的病人在一年内会经历复发；大约1/3的患者在患病一年后仍然抑郁，15%的抑郁症病人会转为慢性（大于2年）。<br>
+抑郁症主要治疗方法是药物治疗，但因抗抑郁药物的滥用及其副作用大、禁忌症多且具有成瘾性，很多患者拒绝接受。除了药物治疗以外，心理辅导也是有效方法之一，患者也易于认可。但心理治疗存在的问题是治疗耗费的时间长，治疗周期跨度大，起效也相对较慢，同时十分依赖外界辅助，患者无法单独进行。<br>
+总结以上，我们希望药盒在辅助药物的前提下，能够添加心理治疗的相关功能，从而达到辅助治疗的一体化，对抑郁症患者提供更大的帮助。</p>
+<h1 id="二-需求分析">二、需求分析</h1>
+<h3 id="抑郁症患者服药需求的特性">抑郁症患者服药需求的特性</h3>
+<p>定时、定量服用药物对参与药物治疗的抑郁症患者来说也至关重要，部分可能导致成瘾的药物的服药行为需要受到管控，同时忘记吃药/忘记是否吃了药的情况也有存在。在“辅助吃药行为”这一点上，我们的药盒与针对老年人的药盒有着一致的目标，但我们的设计想法是制作与传统功能有所不同的药盒产品。因此在需求分析上，我们提炼出了抑郁症患者与老年人服药需求的区别：</p>
+<ol>
+<li>很多抑郁症患者并不像老年人一样长期待在室内，对于抑郁症患者来说，药盒应该有一定的便携性</li>
+<li>抑郁症患者的治疗方案不甚相同，我们需要详细了解一下焦虑症患者服药量和药的存放要求</li>
+<li>部分抑郁症药物有一定的成瘾等副作用，我们需要更加关注药物的副作用</li>
+<li>不同于老年人，抑郁症发病以青年人居多，他人监督吃药的需求较少</li>
+</ol>
+<h3 id="抑郁症的心理治疗方案">抑郁症的心理治疗方案</h3>
+<p>抑郁症的治疗分为心理精神治疗与生物疗法两大块。其中，生物疗法为服用抗抑郁药物；而关于心理精神治疗，很重要的一块为认知疗法。它包含以下几方面内容：</p>
+<ol>
+<li>教育阶段：个体认识到认知、情绪和行为间的关系</li>
+<li>行为激活或快乐事件日程安排：增加个体生理的活动性，以及对社交和其他有益活动的参与程度</li>
+<li>认知联系：形成并练习一些认知或行为策略，以帮助自己进行行为假设检验或应对以前的问题情境</li>
+<li>行为假设检验：个体有意识地检验其消极假设的正确性，并否定这些假设</li>
+</ol>
+<h3 id="减轻消极情绪提高治疗积极性">减轻消极情绪，提高治疗积极性</h3>
+<p>减轻治疗、服药过程所带来的恐惧感，提升患者的接纳度，能够帮助患者正视疾病，积极参与治疗。同时，通过任务帮助患者了解自己的生理状态和心理状态、引导患者关注自己的情绪，能够帮助他们提升对疾病的控制感，在心理层面上对患者具有积极影响。</p>
+<h2 id="1-目标需求">1. 目标需求</h2>
+<ul>
+<li>令人放松的外形</li>
+<li>辅助吃药，包括提醒吃药、过量服药警告</li>
+<li>药物治疗与心理治疗活动相结合</li>
+<li>结合游戏化设计，缓解患者对疾病的焦虑、鼓励治疗</li>
+</ul>
+<h2 id="2-解决方案">2. 解决方案</h2>
+<p>我们的解决方案是将药物治疗与心理治疗融合到药盒设计上，并设计了一套游戏化流程：</p>
+<ol>
+<li>设置“健康小任务”清单，设定个人服药计划</li>
+<li>提供生理、心理(自我关怀、冥想等)、情感、社交方面的任务列表</li>
+<li>在任务完成后，给用户提供社交性的奖励</li>
+</ol>
+<p>关于如何设计一个面向心理疾病患者的智能药盒，这个问题具有一定的专业性，需要一定的专业知识支持，或者已有成功案例的参考。为此，我们进一步从各方面收集信息，包括<strong>搜寻网络上抑郁症患者的自述</strong>、<strong>咨询身边心理健康相关专业同学</strong>、<strong>访谈抑郁症患者</strong>、<strong>调研成功产品的案例</strong>，综合这些信息得出了我们的最终方案。</p>
+<h1 id="三-产品设计方案">三、产品设计方案</h1>
+<h3 id="目标痛点">目标痛点</h3>
+<ul>
+<li>需要督促患者按时吃药</li>
+<li>一些抑郁症患者对吃药具有消极情绪</li>
+<li>一些抑郁症患者缺乏积极治疗的动力和行动力</li>
+</ul>
+<h3 id="设计方案">设计方案</h3>
+<p>受心理治疗中行为激活疗法和游戏化技术的启发，我们设计了一款具有便携性的智能药盒，药盒将同时关注使用者的生理需求和心理需求。药盒鼓励用户完成一些有助于身心健康的小任务，并通过游戏化的方式促进这种正向的循环。具体的方式为在显示器中央将显示每日用户需要完成的小任务，用户完成这些任务后可以获得一些正向的奖励。</p>
+<h2 id="1-外型设计">1. 外型设计</h2>
+<p>在最初的外型设计中，我们的构想是正面为圆形，侧面均分为 7 个盛药的格子，分别可从侧面打开，正面有彩色 LCD 屏幕用于呈现任务和奖励，用户使用时用大拇指操药盒上的 4 个按钮进行交互。<br>
+而在挑选硬件时我们发现了更易于用户交互、可上下左右拨动的五向按钮；在制作原型的过程中，我们发现竖向屏幕更易于原型开发；同时，必不可少的硬件和接线所占空间比我们想象中的要大，先前设计的外壳尺寸无法包裹住我们的原型。因此，我们做了稍许调整：将屏幕改为竖向，外形改为长方体；4 个按钮改为 1 个五向摇杆和 1 个按钮；原型盛药的格子也有所减少。具体可见后图。</p>
+<figure data-type="image" tabindex="1"><img src="https://liaoyu.co/post-images/1597604046940.png" alt="" loading="lazy"></figure>
+<h2 id="2-任务设计">2. 任务设计</h2>
+<p>药盒上的任务分为基础任务和额外任务，任务发布的周期和吃药的周期同步。基础任务即吃药任务，是每个周期必须完成的任务，周期在第一次启动药盒时设置，之后能在特殊的界面里重新设置。额外任务则是一些简单的但是有益健康的任务，这些任务药盒不会监督完成，靠用户自觉完成。额外任务包括：</p>
+<ul>
+<li>运动相关：不宜过难，主要是简单的活动，可以循序渐进，比如舒展身体，从椅子上起来走一走、原地跳五下</li>
+<li>饮食相关：比如吃健康餐，喝一杯水</li>
+<li>情感相关：比如拥抱自己，整理自己目前在担忧的事情，和朋友聊一聊等</li>
+<li>生活习惯相关：比如早睡一次，做一次正念训练<br>
+每天我们将为用户提供 5 个可完成的小任务，其中首先包括吃药的基础任务，剩下的任务从额外任务库中随机生成。</li>
+</ul>
+<h2 id="3-奖励设计">3. 奖励设计</h2>
+<p>我们的灵感来自于游戏《Kind Words》，它利用社交来激发用户的积极情绪。而我们让用户互相给予奖励。通过互相鼓励，我们希望我们的用户建立一种 “我们正在一起努力克服这个疾病，我并不孤单” 的连接感。<br>
+这个过程通过词语系统来实现。首先我们依据目前收集到的句子的结构对词语分成了 4 类，其中 “主（+谓/系）” 和 ”实义词（宾/表）“ 两个部分必须有内容才能凑成整句：<br>
+<img src="https://liaoyu.co/post-images/1597604170374.png" alt="" loading="lazy"></p>
+<p>词语按使用分为 默认词语 和 可收集词语。默认词语可以重复使用，药盒初次使用是就内置了这些词语；而可收集词语是消耗品。当用户完成一项任务时，可能收到一句来自其他病友的鼓励性话语，这些话语中所用到的词语会成为该用户拥有的可收集词汇；也可能直接得到一些新的可收集词汇。<br>
+在写信页面，用户可以通过按键来在句子对应的位置填入对应要求的词语。</p>
+<h2 id="4-ui设计">4. UI设计</h2>
+<figure data-type="image" tabindex="2"><img src="https://liaoyu.co/post-images/1597604456138.png" alt="" loading="lazy"></figure>
+<h1 id="四-原型开发">四、原型开发</h1>
+<h2 id="1-页面架构">1. 页面架构</h2>
+<p>任务页面应是用户需要最常见到和用到的页面，因此设计为一级页面，通过左右拨动五向按钮进行切换；吃药时间设置自第一次设置完成后，后续需要用到的次数较少，写信页面也是完成了一定任务后才会用到，因此将它们作为次级页面，页面入口放在与任务页面同级的位置。<br>
+<img src="https://liaoyu.co/post-images/1597604544603.png" alt="" loading="lazy"></p>
+<h2 id="2-页面流程">2. 页面流程</h2>
+<ol>
+<li>任务完成流程<br>
+→ 任务页（page1-5）<br>
+→ 按下完成按钮<br>
+→ 确认完成弹窗（finish_confirm）<br>
+→ 按下确认按钮<br>
+→ 任务完成，任务页刷新为奖励页（bonusN）</li>
+<li>吃药时间设置流程<br>
+→ 入口页（page6）<br>
+→ 进入吃药时间设置页，设置每天吃药次数（set_times）<br>
+→ 依次设置吃药时间（set_timeN）<br>
+→ 按下确认按钮<br>
+→ 返回主页（page1）</li>
+<li>发送信件流程<br>
+→ 入口页（page6）<br>
+→ 进入写信页，分别选择词语（choose_words）<br>
+→ 按下发送按钮<br>
+→ 确认发送弹窗（send_confirm）<br>
+→ 按下确认按钮<br>
+→ 发送成功页（send_success）<br>
+→ 返回主页（page1）</li>
+</ol>
+<p>（省略硬软件开发部分，<a href="https://docs.google.com/document/d/1UgJEe8qNNPS84s61dIgJoYmJE30c1BN4MmOVYAnsAgE/edit?usp=sharing">完整文档点这里</a>）</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://liaoyu.co/post/learning-diary/">
+              <h3 class="post-title">
+                下一篇：学习日记社区设计练习
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://liaoyu.co/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
