@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liaoyu.co</id>
     <title>Liao Yu</title>
-    <updated>2020-08-16T19:21:28.279Z</updated>
+    <updated>2020-08-16T19:40:21.251Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liaoyu.co"/>
     <link rel="self" href="https://liaoyu.co/atom.xml"/>
@@ -17,11 +17,13 @@
         </link>
         <updated>2020-06-20T17:56:52.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
-<p>受心理治疗中行为激活疗法和游戏化技术的启发，我们设计了一款具有便携性的智能药盒，药盒将同时关注使用者的生理需求和心理需求。<br>
+<p>技术创意课程作业<br>
+我的角色：组长，产品设计，UI设计，原型开发<br>
+受心理治疗中行为激活疗法和游戏化技术的启发，我们设计了一款具有便携性的智能药盒，药盒将同时关注使用者的生理需求和心理需求。<br>
 药盒鼓励用户完成一些有助于身心健康的小任务，并通过游戏化的方式促进这种正向的循环。<br>
-具体的方式为在显示器中央将显示每日用户需要完成的小任务，用户完成这些任务后可以获得一些正向的奖励。<br>
-我的角色：组长，产品设计，UI设计，原型开发</p>
+具体的方式为在显示器中央将显示每日用户需要完成的小任务，用户完成这些任务后可以获得一些正向的奖励。</p>
 </blockquote>
+<p>（以下省略硬软件开发和技术测试部分，<a href="https://docs.google.com/document/d/1UgJEe8qNNPS84s61dIgJoYmJE30c1BN4MmOVYAnsAgE/edit?usp=sharing">完整文档点这里</a>）</p>
 <p><img src="https://liaoyu.co/post-images/1597603885029.jpg" alt="" loading="lazy"><br>
 <img src="https://liaoyu.co/post-images/1597603937605.jpg" alt="" loading="lazy"><br>
 <img src="https://liaoyu.co/post-images/1597603942697.jpg" alt="" loading="lazy"><br>
@@ -122,7 +124,35 @@
 → 发送成功页（send_success）<br>
 → 返回主页（page1）</li>
 </ol>
-<p>（省略硬软件开发部分，<a href="https://docs.google.com/document/d/1UgJEe8qNNPS84s61dIgJoYmJE30c1BN4MmOVYAnsAgE/edit?usp=sharing">完整文档点这里</a>）</p>
+<h1 id="五-原型效果">五、原型效果</h1>
+<h2 id="1-内部结构">1. 内部结构</h2>
+<p><img src="https://liaoyu.co/post-images/1597606578635.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606593817.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606658363.png" alt="" loading="lazy"></p>
+<h2 id="2-外观效果">2. 外观效果</h2>
+<p><img src="https://liaoyu.co/post-images/1597606736804.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606744802.jpg" alt="" loading="lazy"></p>
+<p>（省略硬软件开发和技术测试部分，<a href="https://docs.google.com/document/d/1UgJEe8qNNPS84s61dIgJoYmJE30c1BN4MmOVYAnsAgE/edit?usp=sharing">完整文档点这里</a>）</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[动物宇航队角色设计建模作业]]></title>
+        <id>https://liaoyu.co/post/space-animal-team/</id>
+        <link href="https://liaoyu.co/post/space-animal-team/">
+        </link>
+        <updated>2020-04-29T19:25:01.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>角色形象设计课程作业<br>
+建模：Maya，Material Design<br>
+烘焙、渲染：Marmoset<br>
+贴图：Substance Painter</p>
+</blockquote>
+<p><img src="https://liaoyu.co/post-images/1597606244691.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606251335.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606258299.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606265268.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606270576.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1597606276175.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
