@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Regrass: 3D 拓扑解谜游戏 | Liao Yu</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://liaoyu.co/favicon.ico?v=1597608935989">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://liaoyu.co/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://liaoyu.co">
+        <img class="avatar" src="https://liaoyu.co/images/avatar.png?v=1597608935989" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://liaoyu.co">
+        <h1 class="site-title">Liao Yu</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Regrass: 3D 拓扑解谜游戏</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-07-31</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://liaoyu.co/tag/9qnEcExUL/">
+                    游戏策划
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://liaoyu.co/tag/49IlSn-Hd/">
+                    游戏设计
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://liaoyu.co/tag/gRDFWA9k-c/">
+                    游戏开发
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://liaoyu.co/tag/j7_GVKRo9/">
+                    游戏
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <blockquote>
+<p>计算机游戏程序设计课程作业（2020.3-2020.7）<br>
+我的工作：游戏策划、关卡策划、机关画面表现、部分功能实现、音效</p>
+</blockquote>
+<h1 id="一-游戏概述">一、游戏概述</h1>
+<p>Regrass 是一款第一人称射击解谜游戏。玩家需要灌溉植物，疏通水渠，解开谜题。简化到每一关卡的具体目标，玩家需要引导关卡内所有的能量植物生长到对应的水源。</p>
+<h1 id="二-游戏规则">二、游戏规则</h1>
+<p>经过多次讨论与修改，我们制订了最终版的游戏规则说明，帮助理解游戏内在逻辑。</p>
+<h2 id="21-玩家操作说明">2.1 玩家操作说明</h2>
+<ul>
+<li>键盘 WASD 按键：玩家的前后左右移动</li>
+<li>键盘E按键：玩家与场景中物体的交互</li>
+<li>鼠标移动：玩家的视角移动</li>
+<li>鼠标左键：控制射击，在射击期间自动按场景格对齐，瞄准的格子有高亮显示</li>
+<li>鼠标滚轮：控制水枪中水的颜色和种类</li>
+<li>鼠标右键：消除当前格的植物</li>
+</ul>
+<h2 id="22-规则详解">2.2 规则详解</h2>
+<h3 id="221-场景">2.2.1 场景</h3>
+<p>每一关的场景都是室内房间，所有交互以方格为单位，下称一格地面为一个地块。<br>
+在场景的初始状态，玩家应能看到两种特殊地块：起点地块（表现为植物的种子所在）和终点地块（表现为富有魔力的水源）。玩家需要使用手中的水枪进行灌溉，引导植物从起点地块一路生长到终点地块。其余的地块参与植物的种植。</p>
+<h3 id="222-植物">2.2.2 植物</h3>
+<p>植物拥有三个属性：颜色、光照与功能。颜色和光照决定植物能在哪些地块生长，而功能决定它如何与玩家交互。</p>
+<ol>
+<li>颜色</li>
+</ol>
+<ul>
+<li>植物的颜色由种子（起点）颜色决定，水（终点）也有颜色，起点和终点的颜色必须对应。</li>
+<li>有些种子不具备彩色颜色，属于任意种子，可以被连接到任意水源。</li>
+<li>一个地块只能种植一种颜色的植物，相同颜色的植物可以共享地块。</li>
+<li>如果地块上已经有了一种颜色的植物，再引导不同颜色的植物生长时，会导致新的颜色覆盖旧的颜色。</li>
+</ul>
+<ol start="2">
+<li>光照</li>
+</ol>
+<ul>
+<li>植物的生长需要满足特定的光照条件，否则无法生长。</li>
+<li>光照分为三档：亮、适中、暗。</li>
+</ul>
+<ol start="3">
+<li>植物种类与功能<br>
+植物只有能从水中中汲取营养的时候才能发挥其功能。</li>
+</ol>
+<figure data-type="image" tabindex="1"><img src="https://liaoyu.co/post-images/1597608004678.png" alt="" loading="lazy"></figure>
+<h3 id="223-连通区域判定">2.2.3 连通区域判定</h3>
+<ol>
+<li>地块状态</li>
+</ol>
+<ul>
+<li>尚未染色状态</li>
+<li>染色但是未联通起点的状态（此时可以与终点联通）</li>
+<li>染色并与起点联通状态，注意这种状态只有在符合光照条件范围内有效</li>
+<li>起点被激活状态（起点与终点联通，且起点数量小于等于终点）<br>
+<img src="https://liaoyu.co/post-images/1597608124055.png" alt="" loading="lazy"></li>
+</ul>
+<p>一个地块有四种状态，如图 2.1 所示。为了便于理解，接下来将使用图片来辅助说明游戏规则，其中各地块图例如图 2.2 所示：<br>
+<img src="https://liaoyu.co/post-images/1597608143929.png" alt="" loading="lazy"></p>
+<ol start="2">
+<li>
+<p>起点终点数量<br>
+起点在连接到终点后，会显示被激活。但当连通区域内的起点数量大于联通区域内 的终点数量，任何起点都不会被激活。如图 2.3 中两个起点都不会激活。<br>
+<img src="https://liaoyu.co/post-images/1597608197264.png" alt="" loading="lazy"><br>
+当联通区域内起点数量等于或小于连通区域内终点数量，所有起点被激活。</p>
+</li>
+<li>
+<p>颜色<br>
+起点、染色区块和终点的颜色必须都是一致的。加入多种颜色后，不同颜色的地块 集算作不同的联通区域。<br>
+<img src="https://liaoyu.co/post-images/1597608213600.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>终点联通<br>
+在游戏中，终点地块间彼此是可联通的（在游戏逻辑上表现为水的流动相通），而 起点地块不能。因此对于联通的终点，只要其中某一段与染色区域连接，就判定所 有联通终点都被连接了。<br>
+<img src="https://liaoyu.co/post-images/1597608244750.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+<h1 id="三-关卡策划">三、关卡策划</h1>
+<h2 id="31-关卡起点交互">3.1 关卡起点交互</h2>
+<p>本游戏中关卡起点有多种联通状态，且联通状态直接决定关卡的激活与否，因此应在画面表现上给予玩家反馈。<br>
+从联通状态来划分，有三种状态：未与染色区域联通、与染色区域联通但未被激活、与终点联通（即被激活）。从颜色来划分，有两种颜色：红色、蓝色。从功能来划分，有 五种功能：能量、弹跳、净化、杂草、方块树。<br>
+要将如此复杂的起点表示融入我们风格简约的游戏当中，需要采取一些平衡感强的设计。考虑到我们的场景整体由方块构成，几何感强，起点也应该暂时采用较为抽象的方式来表现。因此，我们仍用基本立方体来表示起点，然后用不同的图案表示起点的不同功能（如图 3.1）。<br>
+<img src="https://liaoyu.co/post-images/1597608278978.png" alt="" loading="lazy"></p>
+<p>“与染色连通但未激活” 状态用起点的自发光效果表示（如图 3.2）。<br>
+<img src="https://liaoyu.co/post-images/1597608297234.png" alt="" loading="lazy"></p>
+<p>“与终点连通，即激活” 用自发光+出现对应的模型表示（如能量球、跳板、方块树等）。<br>
+<img src="https://liaoyu.co/post-images/1597608321097.png" alt="" loading="lazy"></p>
+<figure data-type="image" tabindex="2"><img src="https://liaoyu.co/post-images/1597608337637.png" alt="" loading="lazy"></figure>
+<h2 id="32-关卡设计">3.2 关卡设计</h2>
+<h3 id="321-关卡设计草案">3.2.1 关卡设计草案</h3>
+<p>设计前我们查阅了一些解谜游戏的设计博客和讲座，总结了一些解谜游戏设计要点：</p>
+<ol>
+<li>解谜游戏不是为了难住玩家，而是让玩家循序渐进地学习规则、掌握规则</li>
+<li>解谜游戏一个关卡的制作目的：介绍机制A或者介绍使用机制A的技巧，如果该游戏是面向休闲玩家的，应该尽可能一关只介绍一个机制或者技巧</li>
+<li>在介绍完技巧之后需要设计一些关卡让玩家再次利用这些技巧以让玩家获得解开谜题的成就感</li>
+<li>关卡中不应该设计和解开谜题无关的机关混淆玩家</li>
+<li>关卡可以设计得具有一定的对称性，留下人工的痕迹反而会让关卡显得有趣</li>
+<li>关卡设计时可以围绕一个特定的主题（非教学关）<br>
+基于上述要点，我们规划了整体关卡流程：<br>
+<img src="https://liaoyu.co/post-images/1597608398321.png" alt="" loading="lazy"></li>
+</ol>
+<h3 id="322-具体关卡设计">3.2.2 具体关卡设计</h3>
+<p>实际制作的时候是先设计零散的关卡，随后组装成最后的大关。因为关卡之间需要排序后才能落实到最后的场景中。<br>
+最早设计了一关以展示多颜色情况下的玩法（顶部玻璃被剔除以展示内容）：<br>
+<img src="https://liaoyu.co/post-images/1597608436178.png" alt="" loading="lazy"></p>
+<p>这一关的制作让我发现了一个问题，设计的解谜区域过大，对玩家来说操作实在不方便，需要长时间精细地瞄准。之后我们做了几个以教学为目的的关卡，设计了一个比较长的场景，但是其中的谜题规模都比较小，解法也简单：<br>
+<img src="https://liaoyu.co/post-images/1597608478029.png" alt="" loading="lazy"></p>
+<p>上述关卡中，我发现了一些问题：</p>
+<ol>
+<li>光照对关卡设计限制过多，设计谜题太被动</li>
+<li>玩家可喷射范围是解谜中很重要的一部分，很适合纳入谜题的范围</li>
+<li>仅仅限制谜题的范围，但是整个场景全能交互仍然会让玩家迷惑，而且当谜题复杂后必然会变大，需要个更合理的解决方案<br>
+因此在制作完该关卡之后，我们修改了一些规则：</li>
+<li>删除光照，修改为了更可控的机制：污渍阻挡地面是否可染色，清洁方块能清楚联通的污渍</li>
+<li>增加弹跳方块，玩家可以用它在纵轴上移动</li>
+<li>讲解谜区域和场景分开，新增了一种固定的材质用于表达可染色区域。而其他区域喷射交互仍然可以有反馈，但是留下的痕迹很快就会消散。<br>
+上述改动后，规则就固定了。最终我们制作了如下的场景，共有9个关卡：<br>
+<img src="https://liaoyu.co/post-images/1597608515265.png" alt="" loading="lazy"></li>
+</ol>
+<h4 id="关卡1基础操作教学">关卡1：基础操作教学</h4>
+<p>关卡1负责教学玩家基础操作，以及如何开枪射击解开机关。枪放置在平台之上，需要玩家通过WASD移动，空格跳跃靠近，靠近后枪会描边高亮，并出现提示要求玩家按E拾取。<br>
+<img src="https://liaoyu.co/post-images/1597608573490.png" alt="" loading="lazy"></p>
+<p>拾取后平台下降，显示出新的关卡，该关卡非常简单，用于介绍基础的联通机制。<br>
+<img src="https://liaoyu.co/post-images/1597608600080.png" alt="" loading="lazy"></p>
+<h4 id="关卡2跳跃进阶">关卡2：跳跃进阶</h4>
+<p>一开始这个关卡只涉及了一个需要弹跳方块才能上去的四格高台。但后来我觉得有必要告诉玩家何时才需要弹跳方块，因此设计了一格高、两格高以及四格高的障碍，告诉玩家空格键跳跃的极限以及弹跳方块跳跃的极限。<br>
+<img src="https://liaoyu.co/post-images/1597608787195.png" alt="" loading="lazy"></p>
+<h4 id="关卡3消除">关卡3：消除</h4>
+<p>该关卡介绍消除机制，玩家进入后看到一格水源联通了一格机关点亮了一扇门。但是前进的门仍然关着，倘若玩家现在连接另一个机关，门不会打开，因为水源数量小于联通机关数量。此时会出现提示，玩家可以通过右键消除地面上的痕迹。<br>
+<img src="https://liaoyu.co/post-images/1597608810990.png" alt="" loading="lazy"></p>
+<h4 id="关卡4综合应用介绍水源反复利用技巧">关卡4：综合应用，介绍水源反复利用技巧</h4>
+<p>这一关没有介绍新的规则，但需要玩家对水源进行反复利用，相比前几关来说有一定的解谜难度。这种反复利用的技巧在关卡中特意设计要运用两次，让玩家在理解该技巧后，能立刻再轻松运用一次，达到一种满足感。<br>
+<img src="https://liaoyu.co/post-images/1597608832016.png" alt="" loading="lazy"></p>
+<h4 id="关卡5增加新颜色多颜色解谜教学">关卡5：增加新颜色，多颜色解谜教学</h4>
+<p>接下来机关都是小的单元关卡，因为解锁第二个颜色后，产生了很多新的规则，我想设计一系列集中紧张、难度循序渐进的逻辑谜题，以引入这些规则，加快游戏的节奏。关卡5比较简单，主要解释增加颜色后如何操作、不同颜色间无法联通的规则。<br>
+<img src="https://liaoyu.co/post-images/1597608847493.png" alt="" loading="lazy"></p>
+<h4 id="关卡6联通进阶">关卡6：联通进阶</h4>
+<p>第六关出现了多水源的情形，水源之间本身就算作联通，因此只需要有一格接口就能触发所有机关。<br>
+<img src="https://liaoyu.co/post-images/1597608864572.png" alt="" loading="lazy"></p>
+<h4 id="关卡7联通应用更复杂的三维场合">关卡7：联通应用，更复杂的三维场合</h4>
+<p>第七关没有介绍新的规则或技巧，但关卡不再是平面，而是三维，玩家需要合理分配染色空间，才能解开该关。<br>
+<img src="https://liaoyu.co/post-images/1597608877443.png" alt="" loading="lazy"></p>
+<h4 id="关卡8三维场景进阶">关卡8：三维场景进阶</h4>
+<p>第八关没有介绍新的规则，但在玩家熟悉了三维场景后，我提供了更复杂的需要利用三维场景特性才能过关的关卡，这关正式地展现出了三维谜题的特殊性。我认为这是我9关中设计的最好的关卡，因为它做到了解谜游戏的进阶要求：顿悟的产生。<br>
+若看右侧的俯瞰图，这个关卡其实很简单。右侧的蓝方块如果联通下面的蓝色水源，会挡住红色，因此它必须连左侧水源，红色也必须绕到蓝水源后方才能不阻挡蓝色水源的连接。但是在三维场景下，我增加了一个拱门在中间，产生了一定的迷惑性，玩家可能一时想不到在柱子上画线，但如果想到谜题就迎刃而解。<br>
+这也是当其他组同学提出需要按键切换俯瞰视角后我拒绝的原因，这个问题的根源是谜题布局没有通过美术很好地展现，而不是功能的缺失所导致的。添加这个功能将很大程度上破坏我们游戏的体验，不是所有关卡需要俯瞰，我可以在需要的时候通过其他方法来解决这个问题。<br>
+<img src="https://liaoyu.co/post-images/1597608892894.png" alt="" loading="lazy"></p>
+<h4 id="关卡9综合运用">关卡9：综合运用</h4>
+<p>这是最后一关，内容最为复杂。因此设计了一个高台让玩家可以俯瞰关卡，下图就是玩家在高台上能看到的场景，玩家可以规划好路线后再去实施。这关的设计同样是需要玩家合理规划路径，中间的路径只有一格宽，只能供一种颜色通过。解开该关后大门会开启，玩家进入下一区域。<br>
+<img src="https://liaoyu.co/post-images/1597608912592.png" alt="" loading="lazy"></p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://liaoyu.co/post/pillpall/">
+              <h3 class="post-title">
+                下一篇：PillPall：为抑郁症患者设计的药盒
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://liaoyu.co/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
