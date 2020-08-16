@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liaoyu.co</id>
     <title>Liao Yu</title>
-    <updated>2020-08-16T20:15:49.569Z</updated>
+    <updated>2020-08-16T20:23:55.786Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liaoyu.co"/>
     <link rel="self" href="https://liaoyu.co/atom.xml"/>
@@ -167,13 +167,13 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[PillPall：为抑郁症患者设计的药盒]]></title>
+        <title type="html"><![CDATA[PillPall: 为抑郁症患者设计的药盒]]></title>
         <id>https://liaoyu.co/post/pillpall/</id>
         <link href="https://liaoyu.co/post/pillpall/">
         </link>
         <updated>2020-06-20T17:56:52.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
-<p>技术创意课程作业<br>
+<p>技术创意课程作业（2020.4-2020.6）<br>
 我的角色：组长，产品设计，UI设计，原型开发<br>
 受心理治疗中行为激活疗法和游戏化技术的启发，我们设计了一款具有便携性的智能药盒，药盒将同时关注使用者的生理需求和心理需求。<br>
 药盒鼓励用户完成一些有助于身心健康的小任务，并通过游戏化的方式促进这种正向的循环。<br>
@@ -298,7 +298,7 @@
         </link>
         <updated>2020-04-29T19:25:01.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
-<p>角色形象设计课程作业<br>
+<p>角色形象设计课程作业（2020.3-2020.4）<br>
 建模：Maya，Material Design<br>
 烘焙、渲染：Marmoset<br>
 贴图：Substance Painter</p>
