@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liaoyu.co</id>
     <title>Liao Yu</title>
-    <updated>2020-08-16T21:11:01.150Z</updated>
+    <updated>2020-08-16T21:20:04.758Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liaoyu.co"/>
     <link rel="self" href="https://liaoyu.co/atom.xml"/>
@@ -164,204 +164,6 @@
 <h4 id="关卡9综合运用">关卡9：综合运用</h4>
 <p>这是最后一关，内容最为复杂。因此设计了一个高台让玩家可以俯瞰关卡，下图就是玩家在高台上能看到的场景，玩家可以规划好路线后再去实施。这关的设计同样是需要玩家合理规划路径，中间的路径只有一格宽，只能供一种颜色通过。解开该关后大门会开启，玩家进入下一区域。<br>
 <img src="https://liaoyu.co/post-images/1597608912592.png" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[长江汛情数据可视化]]></title>
-        <id>https://liaoyu.co/post/flood-vis/</id>
-        <link href="https://liaoyu.co/post/flood-vis/">
-        </link>
-        <updated>2020-07-24T20:57:00.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>浙江大学 CG&amp;CAD 实验室交互式数据小组项目（2020.7.21-2020.7.25）<br>
-我的工作：提供多种配色方案、站点图表与新闻卡片样式、一些设计上的建议</p>
-</blockquote>
-<p><a href="https://flood.projects.zjvis.org/">网站点这里</a></p>
-<figure data-type="image" tabindex="1"><img src="https://liaoyu.co/post-images/1597611601606.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="2"><img src="https://liaoyu.co/post-images/1597611718786.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="3"><img src="https://liaoyu.co/post-images/1597611906313.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AR Virtual Pet]]></title>
-        <id>https://liaoyu.co/post/ar-virtual-pet/</id>
-        <link href="https://liaoyu.co/post/ar-virtual-pet/">
-        </link>
-        <updated>2020-07-02T20:28:41.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>人机交互技术课程作业（2020.6）<br>
-我的角色：组长，用户调研，产品原型设计</p>
-</blockquote>
-<h1 id="part-a-requirements-analysis">Part A: Requirements Analysis</h1>
-<h2 id="1-user-general-characteristics-description">1 User General Characteristics Description</h2>
-<ol>
-<li>Children and their parents, young adults.<br>
-They are more likely to like pets and are open to new things.</li>
-<li>People with various constraints that prevent them from having a pet.<br>
-Some practical factors (health, living situation, costs (maintenance, care, required shots), absence (e.g., frequent business trips), etc.) prevent them from keeping pets. So if they want to have one, a virtual pet app will be a perfect choice.</li>
-<li>Everyone who needs to have a companion but can't due to the traumatic situations related to pet death or unavoidable illnesses (in some breeds).<br>
-Pet deaths can be traumatic for pet owners, leading them to decide not to have a pet even if they love it. But a virtual pet can be undying.</li>
-<li>People who like pets and do not go out often.<br>
-The virtual pet can probably motivate them to go out and exercise more.</li>
-</ol>
-<h3 id="11-user-description">1.1 User Description</h3>
-<ol>
-<li><strong>Former pet owner sample</strong>: Alice Lai, 21, a college student majoring in psychology. She once had a dog, but finally gave it away because of her family's objection. She wants a virtual pet app where she can truly feel the relation and companionship with a pet, rather than a business game.</li>
-<li><strong>Child user sample</strong>: Peter Liu, an 8-year-old boy. He wants to own a unique pet. He is curious and can't wait to play with AR. It will be better if he can play it with his friends.</li>
-<li><strong>Parent user sample</strong>: Judy He, 33, a housewife and the mother of a 5-year-old boy. She wants to guide her child to raise a virtual pet to teach him responsibility and empathy.</li>
-<li><strong>Young adult sample</strong>: Sam Zhang, 26, an IT programmer. He loves pets, especially lovely cats and dogs. He often sits for a long time because of his work. But he will be willing to go out and exercise more if his virtual pet needs to.</li>
-<li><strong>Patient sample</strong>: Lucy Jia, 21, a college student with depression. She needs the company of others or pets, but she can't take the risk of traumatic situations that may happen to her pet, such as death.</li>
-</ol>
-<h3 id="12-question-sampling">1.2 Question Sampling</h3>
-<p>Basic Information</p>
-<ol>
-<li>Age, gender, occupation, etc.</li>
-</ol>
-<p>Pet-Keeping<br>
-2. Do you like pets?<br>
-3. What kind of pets do you like (dog, cat, Guinea pig, bird, or other pets)?<br>
-4. What type of pets do you like (friendly, cute, warm, ferocious, smart, or other characters)?<br>
-5. Are you interested in keeping a pet?<br>
-6. Are you keeping pets now?<br>
-7. (if he/she is) Have you encountered any problems in keeping pets?<br>
-8. Do you enjoy keeping pets? Why or why not?<br>
-9. Can you describe the daily routine of keeping pets?<br>
-10. (if he/she isn't) Why don't you get a pet?</p>
-<p>Virtual Pet &amp; AR<br>
-11. Do you know virtual pets or virtual pets? Have you ever tried? How do you like them?<br>
-12. Do you know AR？Have you experienced it?<br>
-13. If there is an AR pet application made for you, will you try?<br>
-14. What functions do you want to have?<br>
-15. What platform do you want to experience the virtual pet application? (mobile/PC)<br>
-16. What kind of environment do you want to experience? (indoor/outdoor/on car/...)<br>
-17. What do you think will attract you in this application？</p>
-<p>Outdoor Activity<br>
-18. Do you often go out for a walk or exercise?<br>
-19. (if not) Why not? Do you want to do that?<br>
-20. Do you want to be encouraged to go out more? Do you think the AR pet can help you?</p>
-<h3 id="13-description-of-the-types-of-tasks">1.3 Description of the Types of Tasks</h3>
-<ol>
-<li><strong>Pet adoption</strong>: When using for the first time, the user can adopt his pet by selecting in 4 given candidate pets, and choose a location for his pet's house in the real scene.</li>
-<li><strong>Pet keeping</strong>: Some daily pet-keeping activities, such as feeding and grooming the pet, or shopping for pet toys.</li>
-<li><strong>Play with the pet</strong>: Play small interaction games with the pet or take it out for a walk to make it pleasant.</li>
-<li><strong>Moments</strong>: It's an achievement system, shown as an album. It provides activities that users can accomplish as achievements and record photos of these moments. It's aimed to motivate users to interact with their pets and create new memories. It also helps to record the moments they share with each other. Creating new memories together can make people deepen the emotional connection with their pets.</li>
-</ol>
-<h3 id="14-detailed-description-of-the-representative-tasks">1.4 Detailed Description of the Representative Tasks</h3>
-<ol>
-<li>Pet adoption</li>
-</ol>
-<ul>
-<li>Pet selection<br>
-In the beginning, the pet adoption center provides 4 pets of different types, appearances, and personalities. They are randomly selected or generated by the system so that players have their unique pets. And the personality is not explicit, to keep a sense of mystery. Users can swipe left or right to switch pets and choose the one they want to keep. If they don't like any of the four, there is another chance to reroll.<br>
-According to our interview results, people tend to have pets of different varieties, appearances, and personalities. And most of them want to have a unique pet.</li>
-<li>Pet house placement<br>
-After selection, the camera will be on. The user can scan a plane in his room to place the pet house. The initial pet house is simple, providing room for upgrades.<br>
-This task is to make the experience more similar to reality and enhance the interaction with the real scene.</li>
-</ul>
-<ol start="2">
-<li>Pet keeping</li>
-</ol>
-<ul>
-<li>Pet feeding<br>
-To increase realism and interactivity, we add a feeding interaction module. The pet will feel hungry if its strength value is lower than a threshold. When it is hungry, it will tell the user through the hungry animation, and the user cannot play with the pet anymore. If the hunger time is too long, the mood value will also drop. The user can throw bones or other food to feed it and increase the strength value. At the same time, it will feedback through a special eating animation.<br>
-With time, pets will grow up in body shape. There are 3 body types, corresponding to infancy, growth, and maturity.</li>
-</ul>
-<ol start="3">
-<li>Play with the pet</li>
-</ol>
-<ul>
-<li>Outdoor walk<br>
-Staying indoors for a long time can make the pet feel down, shown as less active and indifferent. To cheer it up, the user should go out and take a walk with it. First, the user needs to click the 'outdoor mode' button to switch mode. In the 'outdoor mode', the pet will walk freely in an area centered on the user when he walks, and even interact with the environment. It is to simulate walking a pet in the real world.<br>
-Going outdoors can create the opportunity for moments and lift pets' mood, but can also lower its strength value, which needs feeding to recover.</li>
-<li>Interaction game<br>
-When the pet is in a bad mood, another way is to play games with it, such as throwing balls at each other. The objects of interaction here are also virtual. The user can select a toy from the toy bar and throw it to the pet by swiping his finger on the screen.<br>
-Because one of our purposes is to encourage users to go out more, the effect of interaction games on the growth of mood value is far less than going out for a walk. But for those who want to pass the time, it is also a nice form of entertainment.</li>
-</ul>
-<h3 id="15-project-drivers">1.5 Project Drivers</h3>
-<h4 id="151-purpose">1.5.1 Purpose</h4>
-<p><strong>Problems</strong></p>
-<ul>
-<li>Inability to have a pet due to various difficulties.</li>
-<li>Lack of detailed pet-related experiences with well-thought gameplays suitable for different age groups and tastes.</li>
-<li>Inability to have a pet due to the pet death trauma.</li>
-</ul>
-<p><strong>Goals</strong></p>
-<ul>
-<li>Make it possible for everyone to have a pet, despite any constraints such as health, space, time, costs.</li>
-<li>Help people to learn responsibility and empathy.</li>
-<li>Let people feel the real relationship and companionship.</li>
-<li>Motivate people to go out for a walk or play a game in the open.</li>
-<li>Deliver fun, educational, and humane entertainment.</li>
-<li>Provide a more realistic and vivid experience using AR.</li>
-</ul>
-<h4 id="152-stakeholders">1.5.2 Stakeholders</h4>
-<ul>
-<li>The customers who pay for our development may be Internet companies or game manufacturers. At the moment when people are crazy about pets, an AR virtual pet game is likely to bring attention and traffic. People will pay for their favorite pets, and the company can also make profits from advertising.</li>
-<li>Considering that we encourage users to go out to play in the game and take photos with pets in different places, we may also cooperate with relevant departments such as the Tourism Bureau to promote tourist attractions.</li>
-<li>Besides, we have the opportunity to link with toy companies to launch related physical products.</li>
-</ul>
-<h4 id="153-users">1.5.3 Users</h4>
-<p>Our key users are college students and young workers aged 18-35. Such users are more interested in AR and willing to try it. And most of them love pets, but they cannot keep real pets due to reasons such as accommodation environment and economic conditions. At the same time, although most of them can't afford the substantial fees for pets, pet food, pet medicines, etc., most of them are willing to pay for video games.</p>
-<h3 id="16-project-constraints">1.6 Project Constraints</h3>
-<h4 id="161-constraints">1.6.1 Constraints</h4>
-<ul>
-<li>The functional limitation is that the functions may be monotonous. The reaction animation of pets is limited. When users find that they can fully predict the behavior of pets, they are likely to lose their freshness. The solution to this may be to add AI technology and social modules to keep users fresh, or get new fun from interacting with other users.</li>
-<li>Another limitation is that there are no technical barriers, and it can be easily imitated, thereby losing users.</li>
-<li>Also, there is still a big gap between AR virtual pets and real pets. The user cannot touch it and cannot feel its temperature. Such AR pets have lost a meaningful way to connect with users emotionally. A real pet has its personality and emotions, but it is challenging for a virtual pet to have feelings. We must admit that virtual pets can never wholly replace real pets.</li>
-</ul>
-<h4 id="162-naming-conventions">1.6.2 Naming Conventions</h4>
-<ul>
-<li>Virtual pet: a type of artificial human companion. They are usually kept for companionship or enjoyment. People may keep a digital pet instead of a real pet. Cyberpet and Tamagotchi were some of the first popular digital pets.</li>
-<li>Moments: an achievement system module in the form of an album.</li>
-</ul>
-<h4 id="163-relevant-facts">1.6.3 Relevant Facts</h4>
-<p>There have already been plenty of AR apps out there that feature virtual pets. Some are marketed as ways to practice for having a real pet; some provide fantasy pets like dragons; some are just fun time-wasters.</p>
-<ul>
-<li>Dog Simulator – Doggygotchi Go! is a free AR app for android. This app uses the camera to place the pet in your surroundings. The commands that you get at the beginning are to give the dog food and water, as well as two kinds of treats. When you tap the food and water icons, the dog goes up to them and appears to be drinking or eating, and bars at the top of the screen, measuring the dog's hunger and thirst fill up. If you don't feed the dog and give it water, the bars go down, but the dog can ever die or get sick.</li>
-<li>Dex: Your AR Dog Companion, like Doggygotchi, uses an onscreen control panel and doesn't require any markers. Dex's animation and the ability of the dog to interact with the environment are also far more impressive than Doggygotchi, and Dex is capable of more tricks. All of that development comes at a price, however, as Dex costs $1.99 in Google Play and the App Store, and also has some in-app purchases — including food, which is kind of vital. Dex can search your home for hidden coins, which can contribute to these in-app purchases, but the total price of running the app is still significant.</li>
-</ul>
-<h4 id="164-assumptions">1.6.4 Assumptions</h4>
-<p>Based on the talks with potential users, we formed several hypotheses, consolidated below:</p>
-<ol>
-<li>People that can't have a pet due to various constraints that are incompatible with the dog will like the virtual pet experience.</li>
-<li>The pet experience will help sensitive people avoid trauma related to pet death, which is inevitable in real life.</li>
-<li>The virtual pet will help lonely people feel accompanied. It may even help with depression by positive distractions. This needs to be tested and confirmed in the proper environment.</li>
-<li>Having a virtual pet will help to teach responsibility, as well as learning empathy and compassion. It can be a proper dog care training before having a real dog, as well.</li>
-<li>The virtual pet will enhance users' motivation to go out and exercise more.</li>
-</ol>
-<h1 id="part-b-building-a-prototype">Part B: Building a Prototype</h1>
-<h2 id="1-scenarios-and-paper-based-mock-up">1 Scenarios and Paper-based Mock-up</h2>
-<h3 id="11-user-interfaces-sketch">1.1 User Interfaces Sketch</h3>
-<figure data-type="image" tabindex="1"><img src="https://liaoyu.co/post-images/1597610616966.jpg" alt="" loading="lazy"></figure>
-<h3 id="12-task-scenarios">1.2 Task Scenarios</h3>
-<p>To clarify the details of product user interaction flow, product functionality, etc., we envisioned two usage scenarios for different users and different intentions.</p>
-<h4 id="scenario-1">Scenario 1</h4>
-<p><strong>System's user</strong>: residential students<br>
-<strong>Platform</strong>: Pad<br>
-<strong>Why use this system in this scenario</strong>: Abba loves animals. He occasionally goes to a cat café to study, and he often meets stray animals on the campus roads and sometimes feeds them. The companionship with animals makes him feel somewhat at ease and happy. Abba has a strong desire for the company of animals, but due to the conditions of the dormitory where animals are forbidden and the cost of keeping animals, he cannot get a real pet.<br>
-<strong>How to use it in this scenario</strong>: Abba stumbled upon this AR pet app while studying in his dorm room. At first, he chose his favorite among the four pets given in the main interface. The pet house was placed next to his chair, and then a cute pet appeared after he scanned the area. Abba stood the Pad up on the table and boosted mood value through feeding and games. The vivid animation of the AR pet made it feel like a real one, which made Abba pleased.</p>
-<h4 id="scenario-2">Scenario 2</h4>
-<p><strong>System's user</strong>: white-collars living alone<br>
-<strong>Platform</strong>: mobile phone<br>
-<strong>Why use this system in this scenario</strong>: Eheh is working alone in Hangzhou, the day's work makes her back pain. Her parents often want her to go out more for a walk, but she either comes home after a short walk or feels a lack of motivation to go out. One time she saw someone walking a dog and imagined that if she had a pet, she could take it out for a walk every day! But she's so busy with her day job and has no time to care for pets so that it's almost impossible.<br>
-<strong>How to use it in this scenario</strong>: Eheh found that this AR pet product has the function of going out for a walk with her pet, so she downloaded it expectantly. In the daytime, she concentrated on her work without worrying about not being able to feed her pet. In the evening, Eheh switched to the outdoor mode and started walking, and the app positioned her location so that her pet could follow her around. With its companionship, Eheh found her walks become longer and more frequent. As a result, her back pain eased off. Every time she saw her pet circling in front of her, she felt happy from the bottom of her heart.</p>
-<h3 id="13-story-board">1.3 Story Board</h3>
-<h4 id="scenario-1-2">Scenario 1</h4>
-<p>Aba can't have pets because they are not allowed in his dorm. But he can download the AR pet app on his Pad to gain lasting companionship.<br>
-<img src="https://liaoyu.co/post-images/1597610744302.jpg" alt="" loading="lazy"></p>
-<h4 id="scenario-2-2">Scenario 2</h4>
-<p>Eheh's day job leaves her no time to keep pets, and she needs to get out for frequent walks to exercise. Having an AR pet with her allows her to allocate her time flexibly and enhances her motivation to go out.<br>
-<img src="https://liaoyu.co/post-images/1597610760812.jpg" alt="" loading="lazy"></p>
-<h2 id="2-cognitive-walkthrough">2 Cognitive Walkthrough</h2>
-<p>To understand the system's learnability for new or infrequent users, we conducted a cognitive walkthrough in which an evaluator worked through the tasks in the two storyboard designs above, and asked a set of questions from the user's perspective. Also, we proposed design changes to these questions.</p>
-<ol>
-<li>No clear prompt on the homepage for hunger and bad mood state.<br>
-In the storyboard design, only by clicking on the feeding or playing button and entering those interfaces can the player see the pet's strength value and mood value. Therefore, to remind users on the homepage to feed when they are hungry or to play with their pets in the bad mood state, we placed exclamation marks above these corresponding buttons to remind players, as shown in the UI sketch. But even so, novice players may still be confused. Because in our original game logic, feeding can also increase the mood value. And players may wonder whether the exclamation mark tells them to press the button or not. For these reasons, we canceled the setting that feeding can increase the mood value, and turned the non-clickable play button gray when the pet was hungry.</li>
-<li>Deficient pet library.<br>
-We want the pets to be more independent individuals than players' accessories, so let the system randomly select 4 pets during the adoption phase, rather than let the players customize their pet. Our design is more in line with the process of picking pets in reality. But one problem is that without a sufficiently rich pet pool, it is likely to make duplication during adoption or result in different players having identical pets in social interactions. Therefore, we need a richer pet library. A better solution is to set rich properties and parameter options, such as color and texture, and let the system randomly combine properties to produce a variety of pet libraries.</li>
-<li>Lack of feedback in the interaction with the pet.<br>
-When feeding the pet, the feedback that the pet has finished eating and increases its physical strength is only a rise in the strength value in our first design. And there is a similar problem of lack of feedback when playing with pets. Therefore, we will add some happy animation and vivid sound effects to enhance the feedback.</li>
-</ol>
 ]]></content>
     </entry>
     <entry>
@@ -877,6 +679,62 @@ When feeding the pet, the feedback that the pet has finished eating and increase
 <img src="https://liaoyu.co/post-images/1587573907930.png" alt="" loading="lazy"></p>
 </li>
 </ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[空间站场景建模作业]]></title>
+        <id>https://liaoyu.co/post/space-station/</id>
+        <link href="https://liaoyu.co/post/space-station/">
+        </link>
+        <updated>2019-07-02T15:41:38.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>场景设计与表现课程作业<br>
+建模工具：Maya，Marmoset，Substance Painter</p>
+</blockquote>
+<h2 id="局部部件">局部部件</h2>
+<p><img src="https://liaoyu.co/post-images/1587570562049.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570796125.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570749609.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570583637.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570589143.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570669711.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570679766.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570708234.png" alt="" loading="lazy"></p>
+<h2 id="整体效果">整体效果</h2>
+<p><img src="https://liaoyu.co/post-images/1587570474403.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570446962.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570478595.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587570482892.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[QSC部分设计作品归档]]></title>
+        <id>https://liaoyu.co/post/QSC-design/</id>
+        <link href="https://liaoyu.co/post/QSC-design/">
+        </link>
+        <updated>2018-09-01T16:00:18.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>记录<s>早年</s>的一些稚嫩视觉/UI设计</p>
+</blockquote>
+<h2 id="闲鱼ui重设计">闲鱼UI重设计</h2>
+<p><img src="https://liaoyu.co/post-images/1587571740845.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571747413.jpg" alt="" loading="lazy"></p>
+<h2 id="潮人毕业典礼">潮人毕业典礼</h2>
+<p><img src="https://liaoyu.co/post-images/1587571584793.gif" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571597145.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571859293.jpg" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587571863452.jpg" alt="" loading="lazy"></p>
+<h2 id="求是潮年鉴">求是潮年鉴</h2>
+<figure data-type="image" tabindex="1"><img src="https://liaoyu.co/post-images/1587572920465.png" alt="" loading="lazy"></figure>
+<h2 id="潮汐音乐节">潮汐音乐节</h2>
+<figure data-type="image" tabindex="2"><img src="https://liaoyu.co/post-images/1587572292989.gif" alt="" loading="lazy"></figure>
+<h2 id="春纳三折页">春纳三折页</h2>
+<p><img src="https://liaoyu.co/post-images/1587572926409.png" alt="" loading="lazy"><br>
+<img src="https://liaoyu.co/post-images/1587572930052.png" alt="" loading="lazy"></p>
+<h2 id="狗年日历">狗年日历</h2>
+<figure data-type="image" tabindex="3"><img src="https://liaoyu.co/post-images/1587572935412.png" alt="" loading="lazy"></figure>
+<h2 id="全员大会海报">全员大会海报</h2>
+<figure data-type="image" tabindex="4"><img src="https://liaoyu.co/post-images/1587572939937.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
